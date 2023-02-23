@@ -1,10 +1,18 @@
-import "./App.css";
+import { Box, Stack } from "@mui/material";
+import Feed from "./Components/Feed";
+import RightBar from "./Components/RightBar";
+import SideBar from "./Components/SideBar";
 
 const App = () => {
   return (
-    <div>
-      <h1>Material Ui</h1>
-    </div>
+    <Box>
+      {/* Navbar */}
+      <Stack>
+        <SideBar />
+        <Feed />
+        <RightBar />
+      </Stack>
+    </Box>
   );
 };
 
