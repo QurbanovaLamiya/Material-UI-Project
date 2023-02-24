@@ -1,15 +1,15 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Avatar from "@mui/material/Avatar";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import Tooltip from "@mui/material/Tooltip";
-import PersonAdd from "@mui/icons-material/PersonAdd";
-import Settings from "@mui/icons-material/Settings";
-import Logout from "@mui/icons-material/Logout";
+import { PersonAdd, Settings, Logout } from "@mui/icons-material";
+import {
+  Box,
+  Avatar,
+  Menu,
+  MenuItem,
+  ListItemIcon,
+  Divider,
+  IconButton,
+  Tooltip,
+} from "@mui/material";
 
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -34,7 +34,7 @@ export default function AccountMenu() {
           >
             <Avatar
               sx={{ width: 32, height: 32 }}
-              src="https://images.pexels.com/photos/15094168/pexels-photo-15094168.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600"
             />
           </IconButton>
         </Tooltip>

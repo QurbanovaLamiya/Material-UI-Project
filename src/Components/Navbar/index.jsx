@@ -1,6 +1,5 @@
 import { AppBar, styled, Toolbar, Box, InputBase, Badge } from "@mui/material";
-import AnimationIcon from "@mui/icons-material/Animation";
-import { Mail, Notifications } from "@mui/icons-material";
+import { Mail, Notifications, Animation } from "@mui/icons-material";
 import AccountMenu from "./Menu";
 
 const StyledToolbar = styled(Toolbar)({
@@ -15,7 +14,7 @@ const Search = styled("div")(({ theme }) => ({
   width: "40%",
 }));
 
-const Icons = styled(Box)(({ theme }) => ({
+const Icons = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",
   gap: "20px",
@@ -32,7 +31,7 @@ const Navbar = () => {
         >
           Navbar
         </Toolbar>
-        <AnimationIcon sx={{ display: { xs: "block", sm: "none" } }} />
+        <Animation sx={{ display: { xs: "block", sm: "none" } }} />
         <Search>
           <InputBase placeholder="search..." />
         </Search>
