@@ -1,10 +1,30 @@
-import { Box } from '@mui/material'
-import React from 'react'
+import { Box, Skeleton, Stack } from "@mui/material";
+import React, { useState } from "react";
+import Post from "./Post";
 
 const Main = () => {
-  return (
-    <Box bgcolor="gray" flex={4} p={2} >Feed section</Box>
-  )
-}
+  const [loading, setLoading] = useState(true);
 
-export default Main
+  setTimeout(() => {
+    setLoading(false);
+  }, [3000]);
+
+  return (
+    <Box flex={4} p={{ xs: 0, md: 2 }}>
+      {loading ? (
+        <Stack spacing={1}>
+          <Skeleton variant="text" height={100} />
+          <Skeleton variant="text" height={20} />
+          <Skeleton variant="text" height={20} />
+          <Skeleton variant="rectangular" height={300} />
+        </Stack>
+      ) : (
+        <>
+          <Post />
+        </>
+      )}
+    </Box>
+  );
+};
+
+export default Main;
