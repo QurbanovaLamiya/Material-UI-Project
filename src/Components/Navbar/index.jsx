@@ -22,7 +22,7 @@ const Icons = styled(Box)(() => ({
 
 const Navbar = () => {
   return (
-    <AppBar position="sticky" sx={{ background: "#4db6ac" }}>
+    <AppBar position="sticky">
       <StyledToolbar>
         <Toolbar
           variant="h6"
